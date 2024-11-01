@@ -1,0 +1,77 @@
+@use "./resets" as *;
+@use "./colors" as *;
+@use "./fonts" as *;
+
+html {
+  background-color: $light-grayish-blue;
+  font-family: "Barlow Semi Condensed Regular";
+}
+
+body {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+main {
+  max-width: 70rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  @media screen and (min-width: 60rem) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    :nth-of-type(1) {
+      grid-column: 1 / 3;
+    }
+    :nth-of-type(4) {
+      grid-column: span 2;
+    }
+    :nth-of-type(5) {
+      grid-row: 1 / 3;
+      grid-column: 4;
+    }
+  }
+}
+
+.comment {
+  background-color: $white;
+  color: $very-dark-grayish-blue;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  &__heading {
+    font-weight: 600;
+    margin-block: 1rem;
+  }
+  &__quote {
+    font-weight: 500;
+    opacity: 70%;
+    &--color-gray {
+      color: $light-gray;
+    }
+  }
+  &--bg-violet {
+    background-color: $moderate-violet;
+    color: $white;
+  }
+  &--bg-grayish-blue {
+    background-color: $very-dark-grayish-blue;
+    color: $white;
+  }
+  &--bg-blackish-blue {
+    background-color: $very-dark-blackish-blue;
+    color: $white;
+  }
+}
+
+.author {
+  &__name {
+  }
+  &__status {
+    opacity: 50%;
+  }
+}
