@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-testimonial-grid-KEnbR76wsU](https://www.frontendmentor.io/solutions/responsive-testimonial-grid-KEnbR76wsU)
 - Live Site URL: [https://bruno514.github.io/Testimonials-Grid-Section/](https://bruno514.github.io/Testimonials-Grid-Section/)
 
 ## My process
@@ -56,4 +56,4 @@ If possible, I would really aprecciate some feedback on my CSS class naming usin
 
 ## Author
 
-- Frontend Mentor - [@Brun514](https://www.frontendmentor.io/profile/Bruno514)
+- Frontend Mentor - [@Bruno514](https://www.frontendmentor.io/profile/Bruno514)
